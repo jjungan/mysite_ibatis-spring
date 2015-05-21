@@ -10,7 +10,7 @@
 <script type="text/javascript">
 	$(document).ready(function(){
 		$("#deleteBtn").click(function(){
-			location.href = '/mysite3/board?a=delete&no='+${board.no};
+			location.href = '/mysite3/board/delete?no='+${board.no};
 		});
 	});
 </script>
@@ -21,8 +21,7 @@
 			<c:import url="/WEB-INF/views/include/header.jsp"/>
 		</div>
 		<div id="content">
-		<form action="/mysite3/board" method="post">
-			<input type="hidden" name="a" value="update">
+		<form action="/mysite3/board/update" method="post">
 			<input type="hidden" name="no" value="${board.no }">
 			<table id="insertTable">
 				<tr>
@@ -50,7 +49,7 @@
 		</form>
 		</div>
 		<div id="navigation">
-			<c:import url="/views/include/navigation.jsp">
+			<c:import url="/WEB-INF/views/include/navigation.jsp">
 				<c:param name="type" value="board"></c:param>
 			</c:import>
 		</div>

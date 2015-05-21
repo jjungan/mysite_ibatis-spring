@@ -10,11 +10,11 @@
 <script type="text/javascript">
 	$(document).ready(function(){
 		$("#writeBtn").click(function(){
-			location.href = '/mysite3/board?a=insertform';
+			location.href = '/mysite3/board/insert';
 		});
 		$("#board #listTable tr").click(function(){
 			var no =$(this).children().first().text();
-			location.href='/mysite3/board?a=view&no='+no;
+			location.href='/mysite3/board/view?no='+no;
 		});
 		$("#board #listTable tr").mouseover(function(){
 			$(this).css({"backgroundColor":"#ddd"});
@@ -35,8 +35,7 @@
 		</div>
 		<div id="content">
 			<div id="board">
-				<form action="/mysite3/board" method="post">
-				<input type="hidden" name="a" value="search">
+				<form action="/mysite3/board/search" method="post">
 				<table id="searchTable">
 					<tr>
 						<td>
@@ -71,7 +70,7 @@
 			</div>
 		</div>
 		<div id="navigation">
-			<c:import url="/views/include/navigation.jsp">
+			<c:import url="/WEB-INF/views/include/navigation.jsp">
 				<c:param name="type" value="board"></c:param>
 			</c:import>
 		</div>

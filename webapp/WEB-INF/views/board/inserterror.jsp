@@ -24,8 +24,7 @@
 		</div>
 		<div id="content">
 			<div id="wrongPassword">비밀번호가 틀렸습니다. </div>
-			<form action="/mysite3/board" method="post">
-				<input type="hidden" name="a" value="insert">
+			<form action="/mysite3/board/insert" method="post">
 				<table id="insertTable">
 					<tr>
 						<th>title</th>

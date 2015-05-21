@@ -11,7 +11,7 @@
 <script type="text/javascript">
 	$(function(){
 		$("#listBtn").click(function(){
-			location.href="/mysite3/board?a=boardlist";
+			location.href="/mysite3/board/list";
 		})
 	});
 </script>
@@ -46,7 +46,7 @@
 			</table>
 		</div>
 		<div id="navigation">
-			<c:import url="/views/include/navigation.jsp">
+			<c:import url="/WEB-INF/views/include/navigation.jsp">
 				<c:param name="type" value="board"></c:param>
 			</c:import>
 		</div>

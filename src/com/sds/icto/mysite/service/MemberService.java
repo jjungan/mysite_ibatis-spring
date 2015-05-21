@@ -20,4 +20,8 @@ public class MemberService {
 		MemberVo member = memberDao.getMember(vo);
 		return member;
 	}
+	
+	public void modifyMember(MemberVo vo){
+		memberDao.update(vo);
+	}
 }

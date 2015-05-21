@@ -15,9 +15,8 @@
 		<div id="content">
 			<div id="user">
 
-				<form id="join-form" name="joinForm" method="post" action="/mysite3/member">
+				<form id="join-form" name="joinForm" method="post" action="/mysite3/member/myinfo">
 					<div id="formDiv">
-					<input type="hidden" name="a" value="updatemember">
 					<label class="block-label" for="name">이름</label>
 					<input id="name" name="name" type="text" value="${sessionScope.authMember.name }">
 

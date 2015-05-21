@@ -6,17 +6,17 @@
 		<c:when test="${param.type == 'guestbook' }">
 			<li>${sessionScope.authMember.name }</li>
 			<li class="selected"><a href="/mysite3/guestbook/list">방명록</a></li>
-			<li><a href="/mysite3/board?a=boardlist">게시판</a></li>		
+			<li><a href="/mysite3/board/list">게시판</a></li>		
 		</c:when>
 		<c:when test="${param.type == 'board' }">
 			<li>${sessionScope.authMember.name }</li>
 			<li><a href="/mysite3/guestbook/list">방명록</a></li>
-			<li class="selected"><a href="/mysite3/board?a=boardlist">게시판</a></li>		
+			<li class="selected"><a href="/mysite3/board/list">게시판</a></li>		
 		</c:when>
 		<c:otherwise>
 			<li class="selected">${sessionScope.authMember.name }</li>
 			<li><a href="/mysite3/guestbook/list">방명록</a></li>
-			<li><a href="/mysite3/board?a=boardlist">게시판</a></li>				
+			<li><a href="/mysite3/board/list">게시판</a></li>				
 		</c:otherwise>
 	</c:choose>
 </ul>

@@ -15,8 +15,7 @@
 			<c:import url="/WEB-INF/views/include/header.jsp"/>
 		</div>
 		<div id="content">
-			<form action="/mysite3/board" method="post">
-				<input type="hidden" name="a" value="insert">
+			<form action="/mysite3/board/insert" method="post">
 				<table id="insertTable">
 					<tr>
 						<th>title</th>
@@ -42,7 +41,7 @@
 			</form>
 		</div>
 		<div id="navigation">
-			<c:import url="/views/include/navigation.jsp">
+			<c:import url="/WEB-INF/views/include/navigation.jsp">
 				<c:param name="type" value="board"></c:param>
 			</c:import>
 		</div>
