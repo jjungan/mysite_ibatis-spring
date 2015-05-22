@@ -16,9 +16,9 @@
 			<div id="user">
 				<form id="login-form" name="loginform" method="post" action="/mysite3/member/login">
 					<label class="block-label" for="email">이메일</label>
-					<input id="email" name="email" type="text" value="">
+					<input id="email" name="email" type="text" autofocus="autofocus">
 					<label class="block-label" >패스워드</label>
-					<input name="password" type="password" value="">
+					<input name="password" type="password">
 
  					<c:if test="${param.result == 'fail'}">
 						<p>로그인이 실패 했습니다.</p>

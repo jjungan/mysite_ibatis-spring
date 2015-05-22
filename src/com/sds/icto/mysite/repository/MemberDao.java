@@ -23,4 +23,8 @@ public class MemberDao {
 		MemberVo member = (MemberVo) sqlMapClientTemplate.queryForObject("member.selectByEmailPassword", vo);
 		return member;
 	}
+	public MemberVo getMemberByEmail(MemberVo vo){
+		MemberVo member = (MemberVo) sqlMapClientTemplate.queryForObject("member.selectByEmail", vo);
+		return member;
+	}
 }

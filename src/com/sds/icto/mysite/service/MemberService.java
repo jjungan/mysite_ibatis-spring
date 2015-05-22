@@ -24,4 +24,9 @@ public class MemberService {
 	public void modifyMember(MemberVo vo){
 		memberDao.update(vo);
 	}
+	
+	public MemberVo selectMemberByEmail(MemberVo vo){
+		MemberVo member = memberDao.getMemberByEmail(vo);
+		return member;
+	}
 }

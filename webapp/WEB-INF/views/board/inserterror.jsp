@@ -8,13 +8,7 @@
 <title>error</title>
 <script type="text/javascript" src="/mysite3/jquery/jquery-1.9.0.js"></script>
 <script type="text/javascript">
-	$(document).ready(function(){
-		$("#gobackBtn").click(function(){
-			window.history.go(-1);
-		});
-		
-		
-	});
+
 </script>
 </head>
 <body>
@@ -34,7 +28,7 @@
 						<th>name</th>
 						<td id="nameTd"><input type="text" id="name" value="${sessionScope.authMember.name }" readonly="readonly"></td>
 						<th>password</th>
-						<td id="passwordTd"><input type="password" id="password" name="password"></td>
+						<td id="passwordTd"><input type="password" id="password" name="password" autofocus="autofocus"></td>
 					</tr>
 					<tr>
 						<td colspan="4" id=textareaTd>

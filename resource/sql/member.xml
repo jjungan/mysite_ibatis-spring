@@ -22,5 +22,11 @@
 		]]> 
 	</select>	
 
+	<select id="selectByEmail" parameterClass="MemberVo" resultClass="MemberVo">
+		<![CDATA[
+			select * from member where email = #email# 
+		]]> 
+	</select>	
+
 
 </sqlMap>

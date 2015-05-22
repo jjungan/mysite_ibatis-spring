@@ -27,6 +27,7 @@ CREATE SEQUENCE member_no_seq
  commit;
  update member set name='jung', password='1111', gender='female' where email = 'jungan.lee@samsung.com'
  
+
  
  
  
